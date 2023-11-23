@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtTen"
+        android:layout_width="372dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Nhập Họ Tên"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/edtTuoi"
+        android:layout_width="372dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Nhập Tuổi"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtMSSV" />
+
+    <EditText
+        android:id="@+id/edtMSSV"
+        android:layout_width="372dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Nhập MSSV"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTen" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="112dp"
+        android:layout_height="106dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cac_thanh_phan_co_ban_trong_android_63726855823_2143" />
+
+    <TextView
+        android:id="@+id/txtSoThich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sở thích: "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGioitinh" />
+
+    <RadioGroup
+        android:id="@+id/rgrGioitinh"
+        android:layout_width="172dp"
+        android:layout_height="45dp"
+        android:checkedButton="@id/radNam"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtGioitinh"
+        app:layout_constraintTop_toBottomOf="@+id/edtTuoi">
+
+        <RadioButton
+            android:id="@+id/radNam"
+            android:layout_width="65dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Nam" />
+
+        <RadioButton
+            android:id="@+id/radNu"
+            android:layout_width="65dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="12dp"
+            android:text="Nữ" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtGioitinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Giới tính: "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTuoi" />
+
+    <CheckBox
+        android:id="@+id/chkDabong"
+        android:layout_width="102dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="10dp"
+        android:text="Đá Bóng "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSoThich" />
+
+    <CheckBox
+        android:id="@+id/chkChoigame"
+        android:layout_width="105dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="10dp"
+        android:text="Chơi Game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkDabong" />
+
+    <TextView
+        android:id="@+id/txtThongtin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Nội dung hiển thị sau khi ấn nút Lưu"
+        android:textColor="#2196F3"
+        android:textColorHint="#03A9F4"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLuu" />
+
+    <Button
+        android:id="@+id/btnLuu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Lưu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgrGioitinh"
+        app:toggleCheckedStateOnClick="false" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
